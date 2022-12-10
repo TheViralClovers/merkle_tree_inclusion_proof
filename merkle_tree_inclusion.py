@@ -75,7 +75,7 @@ if(level_2_hash_pos):
 else:
 	hash_calc = sha256((level_2_hash+hash_calc).encode("utf-8")).hexdigest()
 
-if(level_2_hash_pos):
+if(level_1_hash_pos):
 	hash_calc = sha256((hash_calc+level_1_hash).encode("utf-8")).hexdigest()
 else:
 	hash_calc = sha256((level_1_hash+hash_calc).encode("utf-8")).hexdigest()
